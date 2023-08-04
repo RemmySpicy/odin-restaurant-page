@@ -1,0 +1,1 @@
+A restaurant page project to practice webpack and modular js lessons, by odinproject 
