@@ -1,0 +1,36 @@
+:root {
+    --ff-pry: ;
+    --ff-sec: ;
+    --ff-tertiary: ;
+
+    --fs-300: ;
+    --fs-400: ;
+    --fs-500: ;
+    --fs-600: ;
+    --fs-800: ;
+
+    --clr-pry: ;
+    --clr-sec: ;
+    --clr-tertiary: ;
+    --clr-black-200: rgb(255 255 255 / .5);
+    --clr-black-400: ;
+
+    --padding-inline: 1.1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    padding-inline: var(--padding-inline);
+    padding-block: 1.5rem;
+    background-color: var(--clr-black-200);
+    display: flex;
+    justify-content: space-between;
+}
