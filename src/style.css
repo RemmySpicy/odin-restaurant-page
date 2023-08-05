@@ -12,8 +12,9 @@
     --clr-pry: ;
     --clr-sec: ;
     --clr-tertiary: ;
+    --clr-white: #fff;
     --clr-black-200: rgb(0 0 0 / .5);
-    --clr-black-400: ;
+    --clr-black-400: rgb(0 0 0);
 
     --padding-inline: 1.1rem;
 }
@@ -25,9 +26,37 @@
 
 body {
     font-family: sans-serif;
+    color: var(--clr-white);
 }
 
+/* General */
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 50vw;
+    color: inherit;
+}
+
+button a {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--clr-black-400);
+}
+
+button.btn-pry {
+    border: 1px solid var(--clr-black-400);
+}
+
+
+
+/* Navbar */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding-inline: var(--padding-inline);
     padding-block: 1.5rem;
     background-color: var(--clr-black-200);
@@ -48,4 +77,21 @@ body {
 
 .navbar ul li {
     padding: .2rem 1rem;
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    /* margin: 0 auto; */
+    height: 100%;
+    background-image: url(./img-hero.jpg);
+    background-position: center;
+    background-size: cover;
 }
