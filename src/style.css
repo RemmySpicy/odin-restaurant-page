@@ -54,7 +54,9 @@ button.btn-pry {
     border: 1px solid var(--clr-black-400);
 }
 
-
+ul, ol {
+    list-style: none;
+}
 
 /* Navbar */
 .navbar {
@@ -76,7 +78,6 @@ button.btn-pry {
 
 .navbar ul {
     display: flex;
-    list-style: none;
     gap: 1.5rem;
 }
 
