@@ -9,8 +9,8 @@
     --fs-600: ;
     --fs-800: ;
 
-    --clr-pry: ;
-    --clr-sec: ;
+    --clr-pry: #ff5200;
+    --clr-sec: #fee2b3;
     --clr-tertiary: ;
     --clr-white: #fff;
     --clr-black-200: rgb(0 0 0 / .5);
@@ -47,15 +47,23 @@ button {
 button a {
     display: block;
     padding: 1rem 2rem;
-    color: var(--clr-black-400);
+    color: inherit;
 }
 
 button.btn-pry {
     border: 1px solid var(--clr-black-400);
+    background-color: var(--clr-pry);
+    border-color: var(--clr-pry);
+    color: var(--clr-white);
 }
 
 ul, ol {
     list-style: none;
+}
+
+/* Logo */
+.logo {
+    /* font-family: "Nunito", sans-serif; */
 }
 
 /* Navbar */
@@ -102,4 +110,38 @@ ul, ol {
 
 .hero {
     /* text-align: center; */
+}
+
+/* Menu Tab */
+.menu {
+    background: var(--clr-sec);
+    color: var(--clr-black-400);
+}
+
+.menu .container {
+    /* min-height: 100vh; */
+    padding-block: 7rem;
+    /* display: flex; */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* height: 100%; */
+}
+
+.menu .card {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.menu .card img {
+    height: 200px;
+    width: 200px;
+    
+    background-image: url(/src/menu-item-1.jpg);
+    background-position: center;
+    background-size: cover;
 }
