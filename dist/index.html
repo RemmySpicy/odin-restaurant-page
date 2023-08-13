@@ -11,10 +11,10 @@
     <header>
         <nav class="navbar">
             <div class="logo">RemmySpicy</div>
-            <ul>
-                <li class="current">Home</li>
-                <li>Menu</li>
-                <li>Contact</li>
+            <ul class="nav-list">
+                <li data-tab="home">Home</li>
+                <li data-tab="menu">Menu</li>
+                <li data-tab="contact">Contact</li>
             </ul>
             <div>
                 <span>Cart</span>
@@ -23,7 +23,7 @@
     </header>
 
     <div id="content">
-        <div class="home">
+        <div class="home tab">
             <div class="container">
                 <div class="hero">
                     <h2>Welcome to RemmySpicy's Restaurant</h2>
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="menu">
+        <div class="menu tab hidden">
             <div class="container">
                 <div class="heading">
                     <p>Select Your Meal</p>
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <div class="contact">
+        <div class="contact tab hidden">
             
             <div class="container">
                 <h2>Book A Table</h2>
@@ -76,7 +76,7 @@
                     <div class="reserve">
                         <form action="">
                             <label for="people-num">Number of People</label>
-                            <input type="number" name="people-num" id="" placeholder="2">
+                            <input type="number" min="1" max="15" name="people-num" id="" value="2">
                             <label for="date">Choose Day</label>
                             <input type="date">
                             <label for="time">Select Time</label>

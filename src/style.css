@@ -75,24 +75,30 @@ ul, ol {
     left: 0;
     right: 0;
     padding-inline: var(--padding-inline);
-    padding-block: 1.5rem;
+    padding-block: 1.2rem;
     background-color: var(--clr-black-200);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar > * {
+.navbar li {
     cursor: pointer;
 }
 
 .navbar ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .navbar ul li {
-    padding: .2rem 1rem;
+    padding: .3rem;
+    border: 3px solid transparent;
+    
+}
+
+.navbar ul .nav-active {
+    border-bottom: 3px solid var(--clr-pry);
 }
 
 /* Home tab */
@@ -121,7 +127,7 @@ ul, ol {
 }
 
 .menu .container {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     padding-block: 7rem;
     /* display: flex; */
 }
@@ -201,6 +207,12 @@ ul, ol {
 }
 
 .reserve input:focus {
-    outline: var(--clr-pry);
+    outline-color: var(--clr-pry);
 }
 
+
+
+
+.hidden {
+    display: none;
+}
