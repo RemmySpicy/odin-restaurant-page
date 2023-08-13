@@ -1,22 +1,9 @@
-import './style.css';
-import createHome from './components/home';
+import pageLoad from "./pageLoad";
+pageLoad()
 
-const content = document.getElementById('content');
-
-const home = new createHome()
-console.log(home)
-
-content.appendChild(home)
-
-const navList = document.querySelector('.nav-list')
-const navItems = document.querySelectorAll('.nav-list li')
-const tabs = document.querySelectorAll(".tab")
-
-console.log(navItems)
-
-// tab.forEach(element => {
-    
-// });
+const navList = document.querySelector('.nav-list');
+const navItems = document.querySelectorAll('.nav-list li');
+const tabs = document.querySelectorAll(".tab");
 
 navList.addEventListener('click', (e) => {
     if (!e.target.dataset.tab) return;

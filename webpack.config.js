@@ -10,6 +10,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  // devTool: 'inline-source-map',
   module: {
     rules: [
       {

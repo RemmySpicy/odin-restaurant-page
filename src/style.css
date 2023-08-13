@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap');
+/*font-family: 'Quicksand', sans-serif;*/
+
 :root {
-    --ff-pry: ;
-    --ff-sec: ;
-    --ff-tertiary: ;
+    --ff-heading: 'Quicksand', sans-serif;
+    --ff-body:  'Nunito Sans', sans-serif;
+    --ff-logo: ;
 
     --fs-300: ;
     --fs-400: ;
-    --fs-500: ;
-    --fs-600: ;
     --fs-800: ;
 
     --clr-pry: #ff5200;
@@ -50,6 +52,8 @@ button a {
     display: block;
     padding: 1rem 2rem;
     color: inherit;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 button.btn-pry {
@@ -62,25 +66,50 @@ button.btn-pry {
 ul, ol {
     list-style: none;
 }
-
-/* Logo */
-.logo {
-    /* font-family: "Nunito", sans-serif; */
-}
-
-/* Navbar */
-.navbar {
+/* header */
+header {
+    border: blue 2px solid;
+    background-color: var(--clr-black-200);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+/* Logo */
+.logo {
+    font-family: var(--ff-heading);
+    font-size: 26px;
+    border: red 2px solid;
+    display: inline-block;
+}
+
+/* Navbar */
+.navbar {
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+}
+/* cart */
+.cart {
+    border: green solid 2px;
+    display: inline-block;
+    font-family: var(--ff-body)
+}
+/*.navbar {
+    position: fixed;
     padding-inline: var(--padding-inline);
     padding-block: 1.2rem;
     background-color: var(--clr-black-200);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    border: 2px solid red;
+}*/
 
 .navbar li {
     cursor: pointer;
@@ -89,6 +118,7 @@ ul, ol {
 .navbar ul {
     display: flex;
     gap: 3rem;
+    border: 2px solid red;
 }
 
 .navbar ul li {
@@ -99,6 +129,9 @@ ul, ol {
 
 .navbar ul .nav-active {
     border-bottom: 3px solid var(--clr-pry);
+}
+.nav-list li {
+    font-family: var(--ff-body)
 }
 
 /* Home tab */
@@ -118,8 +151,25 @@ ul, ol {
 
 .hero {
     /* text-align: center; */
+    max-width: 60%;
 }
 
+/* Stying h2 */
+.hero h2 {
+    font-family: var(--ff-heading);
+    font-size: 45px;
+}
+
+.hero p {
+    font-family: var(--ff-body);
+    font-size: 20px;
+}
+.hero h2, .hero p {
+    padding-bottom: 16.5px;
+}
+.hero span {
+    color: var(--clr-pry)
+}
 /* Menu Tab */
 .menu {
     background: var(--clr-sec);
