@@ -1,4 +1,12 @@
 import './style.css';
+import createHome from './components/home';
+
+const content = document.getElementById('content');
+
+const home = new createHome()
+console.log(home)
+
+content.appendChild(home)
 
 const navList = document.querySelector('.nav-list')
 const navItems = document.querySelectorAll('.nav-list li')
@@ -31,3 +39,4 @@ navList.addEventListener('click', (e) => {
         }
     })
 })
+
