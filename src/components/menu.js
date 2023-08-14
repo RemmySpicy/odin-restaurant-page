@@ -17,20 +17,19 @@ export default function createMenu() {
             <ul>
                 <li class="card">
                     <h3>Breakfast</h3>
-                    ${img}
-                    <img src="/src/menu-item-1.jpg" alt="food 1">
+                    <div class="food-1 img"></div>
                     <p>Medium bowl of Shrimpy Ricy Soupy thingy</p>
                     <button><a href="">Order Now</a></button>
                 </li>
                 <li class="card">
                     <h3>Lunch</h3>
-                    <img src="/src/menu-item-2.jpg" alt="food 2">
+                    <div class="food-2 img"></div>
                     <p>Roasted rips with sliced tomatoes and potatoes</p>
                     <button><a href="">Order Now</a></button>
                 </li>
                 <li class="card">
                 <h3>Dinner</h3>
-                    <img src="/src/menu-item-3.jpg" alt="food 3">
+                    <div class="food-3 img"></div>
                     <p>Meaty vegetable dish on ceramic bown</p>
                     <button><a href="">Order Now</a></button>
                 </li>
