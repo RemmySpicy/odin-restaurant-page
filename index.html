@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                
     <title>Odin Restaurant Page</title>
     <script src="./main.js" defer></script>
 </head>
@@ -41,19 +42,19 @@
                 <ul>
                     <li class="card">
                         <h3>Breakfast</h3>
-                        <img src="/src/menu-item-1.jpg" alt="">
+                        <div class="food-1 img"></div>
                         <p>Medium bowl of Shrimpy Ricy Soupy thingy</p>
                         <button><a href="">Order Now</a></button>
                     </li>
                     <li class="card">
                         <h3>Lunch</h3>
-                        <img src="/src/menu-item-2.jpg" alt="">
+                        <div class="food-2 img"></div>
                         <p>Roasted rips with sliced tomatoes and potatoes</p>
                         <button><a href="">Order Now</a></button>
                     </li>
                     <li class="card">
                         <h3>Dinner</h3>
-                        <img src="/src/menu-item-3.jpg" alt="">
+                        <div class="food-3 img"></div>
                         <p>Meaty vegetable dish on ceramic bown</p>
                         <button><a href="">Order Now</a></button>
                     </li>
@@ -62,30 +63,38 @@
             </div>
         </div> -->
 
-        <!-- <div class="contact tab hidden">
+        <div class="contact tab hidden">
             
-            <div class="container">
-                <h2>Book A Table</h2>
-
+            <div class="container-for-contact">
                 <div class="contact-details">
-                    <div class="about">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non rem debitis eius dolorem, mollitia, nemo sint, hic nihil fuga laudantium facere at.</p>
+                    <h2>Book A Table</h2>
+                    <p>Indulge in an unforgettable dining experience at RemmySpicy, where exquisite flavors 
+                            and impeccable service come together to create a culinary journey like no other. 
+                            Whether you're seeking a romantic evening for two, a gathering with friends and 
+                            family, or a corporate event, our restaurant promises to deliver an exceptional dining experience 
+                            that will tantalize your taste buds and leave you craving for more.
+                    </p>
+                    <div>
+                        <i class='fa fa-phone' style='color: white'></i>
+                        <i class='fa fa-whatsapp' style='color: white'></i>
+                        <i class = 'fa fa-facebook' style="color:white"></i>
+                        <i class="fa fa-instagram" style="color: white"></i>
                     </div>
-                    <div class="reserve">
-                        <form action="">
-                            <label for="people-num">Number of People</label>
-                            <input type="number" min="1" max="15" name="people-num" id="" value="2">
-                            <label for="date">Choose Day</label>
-                            <input type="date">
-                            <label for="time">Select Time</label>
-                            <input type="time" name="" id="">
-                            <button class="btn-pry" type="submit"><a href="">Make Reservation</a></button>
-                        </form>
-                    </div>
+                </div>
+                <div class="reserve">
+                    <form action="">
+                        <label for="people-num">Number of People</label>
+                        <input type="number" min="1" max="15" name="people-num" id="" value="2">
+                        <label for="date">Choose Day</label>
+                        <input type="date">
+                        <label for="time">Select Time</label>
+                        <input type="time" name="" id="">
+                        <button class="btn-pry" type="submit"><a href="">Make Reservation</a></button>
+                    </form>
                 </div>
             </div>
 
-        </div> -->
+        </div>
     </div>
 </body>
 </html>
